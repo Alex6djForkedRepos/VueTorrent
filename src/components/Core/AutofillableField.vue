@@ -91,7 +91,21 @@ div.autofill-container--disabled {
   pointer-events: none;
 }
 
-input:focus {
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: inherit;
+  min-width: 0;
+  outline: none;
+}
+
+input:focus,
+input:focus-visible,
+input:active {
+  box-shadow: none;
   outline: none;
 }
 </style>
